@@ -19,9 +19,14 @@ const corsOptions = {
 app.use(cors(corsOptions));
 
 // Routes
+app.get('/', function(res, req){
+    res.send("root endpoint")
+});
 app.use('/api/quizzes', quizRoutes);
 
 // Start the server
 app.listen(port, () => {
     console.log(`Server is running on port ${port}`);
 });
+
+module.exports = app;
