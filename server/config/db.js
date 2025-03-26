@@ -1,9 +1,9 @@
 const mongoose = require('mongoose');
 
-const username = 'username';
-const password = 'password';
-const cluster = 'cluster';
-const dbname = 'database';
+const username = process.env.USERNAME;
+const password = process.env.PASSWORD;
+const cluster = process.env.CLUSTER;
+const dbname = process.env.DBNAME;
 
 const uri = `mongodb+srv://${username}:${password}@${cluster}.mongodb.net/${dbname}?retryWrites=true&w=majority`;
 

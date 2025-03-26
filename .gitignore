@@ -1,7 +1,6 @@
 */node_modules
 */package-lock.json
 
-server/config/db.js
 
 # Editor directories and files
 .vscode/*
